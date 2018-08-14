@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huangr.storageanimation.MainActivity">
+
+    <!--waterview_amplitude     振幅 ，参考值10到100之间-->
+    <!--waterview_up_velocity   上升速度，参考值3-->
+    <!--waterview_paint_color_first     第一支画笔的颜色-->
+    <!--waterview_paint_color_second     第二支画笔的颜色-->
+    <!--waterview_sleep_time     休眠时间毫秒 参考值100-->
+    <!--waterview_offset_increment_value    初项递增值，表示波浪的快慢   0参考值.4f-->
+    <com.huangr.storageanimation.WaterView
+        android:id="@+id/waterview"
+        android:layout_width="208dp"
+        android:layout_height="208dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:waterview_paint_color_first="#D7F8FF"
+        app:waterview_paint_color_second="#AEEDFF"
+        app:waterview_frame_color="#27AFED"
+        app:waterview_amplitude="30"
+        app:waterview_up_velocity="10"
+        app:waterview_sleep_time="150"
+        app:waterview_offset_increment_value="0.4"
+        app:waterview_isShowFrame="true"
+        android:background="@drawable/shape_wave_water_bg"/>
+
+</RelativeLayout>
